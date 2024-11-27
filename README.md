@@ -46,12 +46,13 @@ Syntax highlighting and editing support for Tana Paste format in Visual Studio C
 Example:
 ```
 %%tana%%
-- My First Note #[[personal notes]]
-  - Created:: [[date:2024-11-26]]
-  - Status:: [[In Progress]]
-  - [x] Task 1
-  - [ ] Task 2
-    - Assigned to:: [[John]]
+- Construction of the Lighthouse of Alexandria #event
+  - Timeframe:: [[date:-0280]]
+  - Brief:: 
+    - One of the Seven Wonders of the Ancient World.
+    - Built on the island of Pharos in Alexandria, Egypt.
+  - Historic period:: 
+    - [[Classical Antiquity]]
 ```
 
 ## Known Issues
