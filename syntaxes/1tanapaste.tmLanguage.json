@@ -1,0 +1,72 @@
+{
+    "name": "Tana Paste",
+    "scopeName": "source.tanapaste",
+    "fileTypes": ["tanapaste"],
+    "patterns": [
+        {
+            "match": "^%%tana%%$",
+            "name": "keyword.control.tanapaste"
+        },
+        {
+            "match": "%%view:(table|cards|tabs|calendar)%%",
+            "name": "keyword.control.view.tanapaste"
+        },
+        {
+            "match": "%%search%%",
+            "name": "keyword.control.search.tanapaste"
+        },
+        {
+            "match": "#\\[\\[([^\\]]+)\\]\\]",
+            "name": "entity.name.tag.complex.tanapaste"
+        },
+        {
+            "match": "#([\\w-]+)",
+            "name": "entity.name.tag.simple.tanapaste"
+        },
+        {
+            "match": "\\^[A-Za-z0-9_-]+",
+            "name": "constant.other.nodeid.tanapaste"
+        },
+        {
+            "match": "\\[\\[date:[^\\]]+\\]\\]",
+            "name": "constant.other.date.tanapaste"
+        },
+        {
+            "match": "\\[\\[([^\\]]+)\\]\\]",
+            "name": "constant.other.reference.tanapaste"
+        },
+        {
+            "match": "([^:]+)::",
+            "name": "variable.other.field.tanapaste"
+        },
+        {
+            "match": "^(\\s*)-\\s",
+            "name": "markup.list.unnumbered.tanapaste"
+        },
+        {
+            "match": "\\*\\*[^*]+\\*\\*",
+            "name": "markup.bold.tanapaste"
+        },
+        {
+            "match": "__[^_]+__",
+            "name": "markup.italic.tanapaste"
+        },
+        {
+            "match": "\\^\\^[^^]+\\^\\^",
+            "name": "markup.highlight.tanapaste"
+        },
+        {
+            "match": "\\[([ xX])\\]",
+            "name": "keyword.control.checkbox.tanapaste"
+        },
+        {
+            "match": "!\\[([^\\]]*)\\]\\(([^\\)]*)\\)",
+            "name": "meta.image.inline.tanapaste"
+        },
+        {
+            "begin": "```([\\w-]*)",
+            "end": "```",
+            "name": "markup.fenced_code.block.tanapaste"
+        }
+    ]
+}

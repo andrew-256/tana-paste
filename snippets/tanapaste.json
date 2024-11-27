@@ -1,0 +1,63 @@
+{
+    "Initialize Tana Document": {
+        "prefix": "tana",
+        "body": [
+            "%%tana%%",
+            "- $1"
+        ],
+        "description": "Create new Tana Paste document"
+    },
+    "Search Node": {
+        "prefix": "search",
+        "body": [
+            "%%search%% $1",
+            "  - $2"
+        ],
+        "description": "Create a search node"
+    },
+    "View Node": {
+        "prefix": "view",
+        "body": "%%view:${1|table,cards,tabs,calendar|}%%",
+        "description": "Set node view type"
+    },
+    "Reference": {
+        "prefix": "ref",
+        "body": "[[${1:reference}]]",
+        "description": "Create a reference"
+    },
+    "Tag": {
+        "prefix": "tag",
+        "body": "#[[${1:tag}]]",
+        "description": "Create a multi-word tag"
+    },
+    "Simple Tag": {
+        "prefix": "#",
+        "body": "#${1:tag}",
+        "description": "Create a simple tag"
+    },
+    "Field": {
+        "prefix": "::",
+        "body": "${1:fieldname}:: ${2:value}",
+        "description": "Create a field"
+    },
+    "Date": {
+        "prefix": "date",
+        "body": "[[date:${1:YYYY-MM-DD}]]",
+        "description": "Create a date"
+    },
+    "Checkbox Unchecked": {
+        "prefix": "[]",
+        "body": "[ ] $1",
+        "description": "Create an unchecked checkbox"
+    },
+    "Checkbox Checked": {
+        "prefix": "[x]",
+        "body": "[x] $1",
+        "description": "Create a checked checkbox"
+    },
+    "Node with ID": {
+        "prefix": "nid",
+        "body": "${1:name}^${2:nodeID}",
+        "description": "Create a node with ID"
+    }
+}

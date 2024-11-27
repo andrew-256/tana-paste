@@ -1,0 +1,29 @@
+{
+    "name": "tana-paste",
+    "displayName": "Tana Paste",
+    "description": "Syntax highlighting for Tana Paste format",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "tanapaste",
+            "aliases": ["Tana Paste", "tanapaste"],
+            "extensions": [".tanapaste"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tanapaste",
+            "scopeName": "source.tanapaste",
+            "path": "./syntaxes/tanapaste.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "tanapaste",
+            "path": "./snippets/tanapaste.json"
+        }]
+    }
+}
