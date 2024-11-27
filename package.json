@@ -3,6 +3,11 @@
     "displayName": "Tana Paste",
     "description": "Syntax highlighting for Tana Paste format",
     "version": "0.0.1",
+    "publisher": "andrew-256",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/andrew-256/tana-paste.git"
+    },
     "engines": {
         "vscode": "^1.0.0"
     },
@@ -13,8 +18,7 @@
         "languages": [{
             "id": "tanapaste",
             "aliases": ["Tana Paste", "tanapaste"],
-            "extensions": [".tanapaste"],
-            "configuration": "./language-configuration.json"
+            "extensions": [".tanapaste"]
         }],
         "grammars": [{
             "language": "tanapaste",
@@ -25,5 +29,6 @@
             "language": "tanapaste",
             "path": "./snippets/tanapaste.json"
         }]
-    }
+    },
+    "license": "MIT"
 }
